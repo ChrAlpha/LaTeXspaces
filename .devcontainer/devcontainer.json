@@ -1,0 +1,20 @@
+{
+  "name": "LaTeXspaces",
+  "postCreateCommand": "bash .devcontainer/postCreateCommand.sh",
+  "remoteUser": "root",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        // "GitHub.copilot",
+        "James-Yu.latex-workshop"
+      ],
+      "settings": {
+        "files.autoSave": "onFocusChange",
+        "latex-workshop.latex.autoBuild.run": "onSave",
+        "latex-workshop.latex.recipe.default": "lastUsed",
+        "latex-workshop.latex.outDir": "./PDF"
+      }
+    }
+  },
+  "features": {}
+}
