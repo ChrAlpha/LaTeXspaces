@@ -11,7 +11,7 @@ cd ~/tmp/texlive
 wget https://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz 
 zcat < install-tl-unx.tar.gz | tar xf -
 cd $(ls -d install-tl-* | head -n 1)
-sudo perl ./install-tl --scheme=small --no-interaction
+sudo perl ./install-tl --no-interaction
 
 # Add TeX Live to PATH
 latest_texlive_path="$(ls -d /usr/local/texlive/[0-9]* | sort -n | tail -1)/bin/x86_64-linux"
